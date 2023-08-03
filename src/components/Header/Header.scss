@@ -1,0 +1,24 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: gray;
+    border-bottom: 1px solid black;
+
+    h1{
+        color: black;
+    }
+
+    img{
+        height: 50px;
+    }
+
+    .chicha{
+        color: pink;
+    }
+
+    .chicho{
+        color: green;
+    }
+
+}
