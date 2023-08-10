@@ -1,13 +1,21 @@
 .GeneralContent {
-    display: grid;
-    place-items: center;
-    grid-template-areas: 
-        'img' 'img'
-        'img' 'img';
-    gap: 10px;
 
-    img {
-        grid-area: 'img';
-        height: 250px;
+    ul {
+        display: grid;
+        place-items: center;
+        grid-template-areas:
+            "img img"
+            "img img";
+        gap: 10px;
+        list-style: none;
+        margin: 20px;
+        // grid-template-columns: repeat(2,1fr);    // No hace falta
+
+        img {
+            grid-area: img;
+            height: 200px;
+            width: 200px;
+        }
+
     }
 }

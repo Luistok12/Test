@@ -1,0 +1,23 @@
+Footer{
+    background-color: rgb(85, 84, 84);
+    opacity: 0.9;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    ul {
+        list-style: none;
+        display: flex;
+        margin: 10px;
+
+        li {
+            margin: 3px;
+
+            a img {
+                height: 50px;
+            }
+        }
+
+    }
+}

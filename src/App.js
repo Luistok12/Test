@@ -5,6 +5,8 @@ import GeneralContent from './components/Content/GeneralContent';
 import ChichaContent from './components/Content/ChichaContent';
 import ChichoContent from './components/Content/ChichoContent';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import GaleriaImagenes from './components/GaleriaImagenes/GaleriaImagenes';
+import Footer from './components/Footer/Footer';
 
 function App() {
   return (
@@ -27,16 +29,18 @@ function App() {
 
     <div className='App'>
       <Router>
-        <div>
+        {/* <div> No hace falta */}
           <Header /> {/* Utiliza tu componente Header */}
 
           <Switch>
             <Route exact path="/" component={GeneralContent} />
             <Route path="/chicha" component={ChichaContent} />
             <Route path="/chicho" component={ChichoContent} />
+            <Route path="/vistaPrevia" component={GaleriaImagenes} />
           </Switch>
-        </div>
+        {/* </div> */}
       </Router>
+      <Footer />
     </div>
   );
 }
@@ -48,3 +52,4 @@ export default App;
 // Actualiza npm: Asegúrate de tener la última versión de npm instalada. Puedes actualizar npm con: npm install -g npm
 // npm cache clean --force [ Para limpiar el cache del npm ]
 // Importante la primera linea que tira ERROR! en el cmd si hay algun problema
+// Es imprecindible que en un return de una funcion (incluido esta app) siempre este envuelto en un div, de lo contrario nos dara error!
