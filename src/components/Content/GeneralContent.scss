@@ -1,0 +1,13 @@
+.GeneralContent {
+    display: grid;
+    place-items: center;
+    grid-template-areas: 
+        'img' 'img'
+        'img' 'img';
+    gap: 10px;
+
+    img {
+        grid-area: 'img';
+        height: 250px;
+    }
+}

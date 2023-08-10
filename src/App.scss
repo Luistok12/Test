@@ -42,3 +42,18 @@
   margin: 0;
   font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
+
+.App{
+  background-image: url(https://wallpapershome.com/images/wallpapers/macos-big-sur-1280x720-dark-wwdc-2020-22655.jpg);
+  min-height: 100%;
+  // background-image: url('./ruta-de-tu-imagen.jpg');
+  background-size: cover;   // Para que la imagen cubra el tamaño en su totalidad, sin esta opcion queda una parte en blanco
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  // Importantisimo el flex
+}
+
+// body, html{
+//   height: 100%;
+// }

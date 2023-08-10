@@ -1,0 +1,6 @@
+.ChichaContent {
+    display: grid;
+    place-items: center;
+    grid-column: repeat(1fr,3);
+    gap: 10px;
+}

@@ -1,6 +1,10 @@
 // import logo from './logo.svg';
 import './App.scss';
 import Header from './components/Header/Header.js';
+import GeneralContent from './components/Content/GeneralContent';
+import ChichaContent from './components/Content/ChichaContent';
+import ChichoContent from './components/Content/ChichoContent';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 function App() {
   return (
@@ -20,11 +24,27 @@ function App() {
     //     </a>
     //   </header>
     // </div>
-    
+
     <div className='App'>
-      <Header />
+      <Router>
+        <div>
+          <Header /> {/* Utiliza tu componente Header */}
+
+          <Switch>
+            <Route exact path="/" component={GeneralContent} />
+            <Route path="/chicha" component={ChichaContent} />
+            <Route path="/chicho" component={ChichoContent} />
+          </Switch>
+        </div>
+      </Router>
     </div>
   );
 }
 
 export default App;
+
+// Problemas con Switch de react router dom -> Switch solo funciona con la version inferior a 6.0, usar: npm install react-router-dom@5.2.0
+// Si el problema sigue borrar la carpeta node modules y package-log.json y luego usar: npm install (Borrar node-sass : npm uninstall node-sass e instalar nuevamente con: npm install)
+// Actualiza npm: Asegúrate de tener la última versión de npm instalada. Puedes actualizar npm con: npm install -g npm
+// npm cache clean --force [ Para limpiar el cache del npm ]
+// Importante la primera linea que tira ERROR! en el cmd si hay algun problema
