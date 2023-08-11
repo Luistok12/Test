@@ -53,3 +53,57 @@ export default App;
 // npm cache clean --force [ Para limpiar el cache del npm ]
 // Importante la primera linea que tira ERROR! en el cmd si hay algun problema
 // Es imprecindible que en un return de una funcion (incluido esta app) siempre este envuelto en un div, de lo contrario nos dara error!
+
+// Componente para redes sociales -> Social media [Opcional]
+
+// Componente!!!
+// import React from 'react';
+// import SocialMediaIcon from './SocialMediaIcon';
+// import './SocialMediaSection.css'; // Importa tus estilos CSS
+
+// const SocialMediaSection = () => {
+//   const socialMediaData = [
+//     {
+//       url: 'URL-DE-RED-SOCIAL',
+//       icon: 'icono-red-1.png',
+//       alt: 'Red Social 1',
+//     },
+//     {
+//       url: 'URL-DE-RED-SOCIAL',
+//       icon: 'icono-red-2.png',
+//       alt: 'Red Social 2',
+//     },
+//     Agrega más datos de redes sociales
+//   ];
+
+//   return (
+//     <div className="social-media-section">
+//       <ul className="social-media-list">
+//         {socialMediaData.map((socialMedia, index) => (
+//           <li key={index}>
+//             <SocialMediaIcon {...socialMedia} />
+//           </li>
+//         ))}
+//       </ul>
+//     </div>
+//   );
+// };
+
+// export default SocialMediaSection;
+
+
+// "Invocacion"
+// import React from 'react';
+// import SocialMediaSection from './SocialMediaSection';
+
+// const App = () => {
+//   return (
+//     <div>
+//       <h1>Mi Aplicación</h1>
+//       <SocialMediaSection />
+//     </div>
+//   );
+// };
+
+// export default App;
+
